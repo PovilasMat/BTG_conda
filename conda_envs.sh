@@ -26,7 +26,7 @@ wc -l "$SCRIPT_DIR"/names_of_conda_envs.txt
 echo "List of all envs that were created:"
 (while read -r LINE; do
     if grep -q "$LINE" "$SCRIPT_DIR"/existing_conda_envs.txt; then
-        echo "$LINE" >> "$SCRIPT_DIR"
+        echo "$LINE"
         echo "$LINE" >> "$SCRIPT_DIR"/matching_conda_envs.txt
     fi
 done < "$SCRIPT_DIR"/names_of_conda_envs.txt)
