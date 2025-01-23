@@ -1,0 +1,8 @@
+name: BTG_QC
+channels:
+ - conda-forge
+ - bioconda
+dependencies:
+ - fastqc
+ - fastp
+ - multiqc

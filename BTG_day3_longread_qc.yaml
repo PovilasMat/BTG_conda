@@ -1,0 +1,9 @@
+name: BTG_longread_qc
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - nanoplot=1.43.0
+  - filtlong=0.2.1
+  - rasusa=2.1.0
+

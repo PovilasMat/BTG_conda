@@ -1,0 +1,11 @@
+name: BTG_longread_assembly
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - unicycler
+  - flye
+  - medaka
+  - polypolish
+  - bwa
+  - porechop_abi

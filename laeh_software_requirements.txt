@@ -1,0 +1,9 @@
+This doc contains software needed on the laptops for the course, which can not be included in a conda-environment. List your wishes here, with a brief description, and links to installation
+
+
+##Spyder
+
+Python IDE
+
+
+https://docs.spyder-ide.org/current/installation.html

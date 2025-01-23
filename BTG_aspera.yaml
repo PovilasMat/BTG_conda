@@ -1,0 +1,14 @@
+name: BTG_aspera
+channels:
+  - rpetit3
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=0_gnu
+  - aspera-connect=3.9.6=0
+  - ca-certificates=2020.6.20=hecda079_0
+  - libgcc-ng=9.2.0=h24d8f2e_2
+  - libgomp=9.2.0=h24d8f2e_2
+  - openssl=1.1.1g=h516909a_0

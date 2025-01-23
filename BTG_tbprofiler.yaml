@@ -1,0 +1,7 @@
+name: BTG_tbprofiler
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - tb-profiler
+  - iqtree
