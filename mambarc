@@ -3,3 +3,5 @@ channels:
   - conda-forge
   - defaults
 channel_priority: flexible
+envs_dirs:
+  - /home/gebt/micromamba/2025_envs

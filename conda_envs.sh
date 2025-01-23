@@ -1,8 +1,10 @@
 #!/bin/bash
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+mkdir -p home/gebt/micromamba/2025_envs/
 echo "alias conda=micromamba" >> ~/.bashrc
-cat "$SCRIPT_DIR"/mambarc >> ~/.mambarc
+cat "$SCRIPT_DIR"/mambarc > ~/.mambarc
+rm ~/.conda/environments.txt
 
 ls -1F "$SCRIPT_DIR" | grep ".yaml" > "$SCRIPT_DIR"/list_of_conda_envs.txt
 
@@ -12,7 +14,7 @@ done < "$SCRIPT_DIR"/list_of_conda_envs.txt)
 
 sed -i 's/name: //g' "$SCRIPT_DIR"/names_of_conda_envs.txt
 (while read -r LINE; do
-  ~/.local/bin/micromamba create -f /home/gebt/BTG_2024/conda_envs/$LINE -y
+  ~/.local/bin/micromamba create -f "$SCRIPTS_DIR"/"$LINE" -y
 done < "$SCRIPT_DIR"/list_of_conda_envs.txt)
 
 echo "List of all envs that should have been created:"
