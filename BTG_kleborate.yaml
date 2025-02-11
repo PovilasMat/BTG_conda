@@ -1,3 +1,4 @@
+name: BTG_kleborate
 channels:
  - conda-forge
  - bioconda

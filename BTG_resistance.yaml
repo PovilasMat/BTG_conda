@@ -1,3 +1,4 @@
+name: BTG_resistance
 channels:
  - conda-forge
  - bioconda
